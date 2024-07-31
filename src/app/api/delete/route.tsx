@@ -1,4 +1,4 @@
-import { Connection, PublicKey, clusterApiUrl, Keypair, Transaction, TransactionInstruction } from '@solana/web3.js';
+import { Connection, clusterApiUrl, Keypair } from '@solana/web3.js';
 import { getDomainKeySync, NAME_PROGRAM_ID, deleteInstruction, } from "@bonfida/spl-name-service";
 import { signAndSendInstructions } from "@bonfida/utils";
 import { NextResponse } from 'next/server';
