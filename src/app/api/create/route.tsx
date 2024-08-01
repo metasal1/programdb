@@ -19,7 +19,7 @@ export async function POST(request: Request) {
     }
     try {
         const wallet = Keypair.fromSecretKey(bs58.decode(process.env.WALLET || ''));
-        const space = 1000;
+        const space = 2;
         const connection = new Connection(process.env.RPC || clusterApiUrl('mainnet-beta'), 'confirmed');
         const sub = `${program}.programdb`;
         const [, ix] = await createSubdomain(
